@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { connectToDatabase, mongoUri } from './database';
 import { Activity, LeaderboardEntry, Team, User, Workout } from './models';
 
-export const seedDescription = 'Seed OctoFit Tracker test data for users, teams, activities, leaderboard, and workouts.';
+export const seedDescription = 'OctoFit Tracker test data seed for users, teams, activities, leaderboard, and workouts.';
 
 const users = [
   { name: 'Mona Octocat', email: 'mona@example.com', role: 'captain' },
