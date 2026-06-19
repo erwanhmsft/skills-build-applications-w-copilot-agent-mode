@@ -11,5 +11,9 @@ export const connectToDatabase = async () => {
     return mongoose;
   }
 
+  if (mongoose.connection.readyState !== 0) {
+    await mongoose.disconnect();
+  }
+
   return mongoose.connect(mongoUri, { dbName: databaseName });
 };
